@@ -42,13 +42,16 @@ articleView.handleAuthorFilter = function() {
       //       and then show just the ones that match for the author that was selected.
       //       Use an "attribute selector" to find those articles, and fade them in for the reader.
       $('article').fadeOut(700);
-      $('#'+this).fadeIn(10);
+      console.log('this is the value '+$(this).val());
+      // console.log($(this).getAttribute('data-author'));
+      1
+      // $(this).children().find()
 
+      // console.log($('this..'+$(this)));
     } else {
       // TODO: If the select box was changed to an option that is blank, we should
       //       show all the articles, except the one article we are using as a template.
-      $('tab-content').fadeIn(1000);
-
+      $().fadeIn(1000);
 
     }
     $('#category-filter').val('');
